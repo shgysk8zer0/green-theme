@@ -7,8 +7,8 @@
 :root {
 	--default-color: rgb(252, 252, 252);
 	--alt-color: rgb(41, 41, 41);
-	--primary-color: rgb(237, 24, 24);
-	--highlight-color: rgb(129, 23, 23);
+	--primary-color: #18CC05;
+	--highlight-color: #085011;
 	--link-color: hsl(209, 62%, 45%);
 	--border-color: rgb(45, 45, 45);
 	--glass-grad: linear-gradient(to top left, rgba(80, 80, 80, 0.7), rgba(140, 140, 140, 0.9), rgba(40, 40, 40, 0.7));
