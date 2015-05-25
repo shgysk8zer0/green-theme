@@ -2,14 +2,24 @@
  * Green theme variables for Super User
  *
  * @author Chris Zuber <shgysk8zer0@gmail.com>
- * @version 1.0.0
+ * @version 2.0.0
  */
-@charset 'UTF-8';
-@import '../base-theme/normalize.css';
-@import '../base-theme/style.css';
-@import '../base-theme/fonts.css';
-@import '../base-theme/class_rules.css';
-@import '../base-theme/animations.css' screen;
+@import '../base-theme/viewport.css';
+@import '../core-css/fonts.css';
+@import '../core-css/normalize.css';
+@import '../core-css/animations.css' screen;
+@import '../core-css/details.css';
+@import '../core-css/dialog.css';
+@import '../core-css/progress.css';
+@import '../core-css/class_rules.css';
+@import '../core-css/links.css';
+@import '../core-css/misc.css';
+@import '../base-theme/forms.css';
+@import '../base-theme/header.css';
+@import '../base-theme/main.css';
+@import '../base-theme/aside.css';
+@import '../base-theme/footer.css';
+@import '../base-theme/address.css';
 :root {
 	/*================= Set color vars here =================*/
 	--default-color: rgb(252, 252, 252);
@@ -29,7 +39,7 @@
 	--progress-grad: linear-gradient(var(--highlight-color), var(--primary-color), var(--highlight-color));
 	/*==================== Set fonts here ====================*/
 	--header-font: 'PressStart';
-	--article-font: 'Comfortaa';
+	--article-font: 'Ubuntu';
 	--article-header-font: var(--header-font);
 	--icon-font: 'Web Symbols';
 	/*================ Set various icons here ================*/
@@ -47,4 +57,38 @@
 	/*================== Set cursors here ==================*/
 	--default-cursor: url('../../../images/cursors/Arch-black.svgz'), auto;
 	--pointer: url('../../../images/cursors/3D_hand_cursor.svgz'), pointer;
+	/*============= Various sizes and positions =============*/
+	--main-width: 90%;
+	--article-width: 67%;
+	--sidebar-width: calc(97% - var(--article-width));
+	--article-position: 2;
+	--sidebar-position: 1;
 }
+:root {
+	background-color: black;
+	background-image: var(--main-bg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	color: var(--default-color);
+	text-shadow: var(--shadow);
+	cursor: var(--default-cursor);
+}
+@supports(background-blend-mode: initial) {
+	:root.CSSsupports {
+		background-color: var(--primary-color);
+		background-blend-mode: multiply;
+	}
+}
+@supports((display: flex) or (display: -webkit-flex) or (display: -ms-flex)) {
+	body {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		text-rendering: optimizeSpeed;
+		scroll-behavior: smooth;
+	}
+}
+
