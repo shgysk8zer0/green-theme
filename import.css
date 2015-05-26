@@ -4,6 +4,7 @@
  * @author Chris Zuber <shgysk8zer0@gmail.com>
  * @version 2.0.0
  */
+@charset 'UTF-8';
 @import '../base-theme/viewport.css';
 @import '../core-css/fonts.css';
 @import '../core-css/normalize.css';
@@ -31,7 +32,7 @@
 	--default-cursor: url('../../../images/cursors/Arch-black.svgz'), auto;
 	--pointer: url('../../../images/cursors/3D_hand_cursor.svgz'), pointer;
 	/*========== Set background images, etc here ==========*/
-	--main-bg: url(../../images/backgrounds/curls-mono.svgz);
+	--main-bg: url(../../images/backgrounds/dark_abstract.svgz);
 	--glass-grad: linear-gradient(to top left, rgba(80, 80, 80, 0.7), rgba(140, 140, 140, 0.9), rgba(40, 40, 40, 0.7));
 	--shadow: rgba(20, 20, 20, 0.9);
 	--tint-glass: linear-gradient(rgba(40, 40, 40, 0.8), rgba(80, 80, 80, 0.7));
@@ -54,6 +55,8 @@
 	--dropdown-open-icon: '[ ';
 	--dropdown-closed-icon: '] ';
 	--close-icon: '\'';
+	--search-icon: 'L';
+	--attachmnent-icon: 'A';
 	/*================== Set cursors here ==================*/
 	--default-cursor: url('../../../images/cursors/Arch-black.svgz'), auto;
 	--pointer: url('../../../images/cursors/3D_hand_cursor.svgz'), pointer;
