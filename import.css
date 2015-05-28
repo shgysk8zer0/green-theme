@@ -5,9 +5,9 @@
  * @version 2.0.0
  */
 @charset 'UTF-8';
+@import '../core-css/normalize.css';
 @import '../base-theme/viewport.css';
 @import '../core-css/fonts.css';
-@import '../core-css/normalize.css';
 @import '../core-css/animations.css' screen;
 @import '../core-css/details.css';
 @import '../core-css/dialog.css';
