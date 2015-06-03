@@ -5,22 +5,24 @@
  * @version 2.0.0
  */
 @charset 'UTF-8';
-@import '../core-css/normalize.css';
-@import '../base-theme/viewport.css';
-@import '../core-css/fonts.css';
-@import '../core-css/animations.css' screen;
-@import '../core-css/details.css';
-@import '../core-css/dialog.css';
-@import '../core-css/progress.css';
-@import '../core-css/class_rules.css';
-@import '../core-css/links.css';
-@import '../core-css/misc.css';
-@import '../base-theme/forms.css';
-@import '../base-theme/header.css';
-@import '../base-theme/main.css';
-@import '../base-theme/aside.css';
-@import '../base-theme/footer.css';
-@import '../base-theme/address.css';
+@import url(../core-css/viewport.css);
+@import url(../core-css/normalize.css);
+@import url(../base-theme/viewport.css);
+@import url(../core-css/fonts.css);
+@import url(../core-css/animations.css) screen;
+@import url(../core-css/details.css);
+@import url(../core-css/dialog.css);
+@import url(../core-css/progress.css);
+@import url(../core-css/class_rules.css);
+@import url(../core-css/links.css);
+@import url(../core-css/misc.css);
+@import url(../base-theme/forms.css);
+@import url(../base-theme/header.css);
+@import url(../base-theme/main.css);
+@import url(../base-theme/aside.css);
+@import url(../base-theme/footer.css);
+@import url(../base-theme/address.css);
+@import url(../core-css/data-filter.css);
 :root {
 	/*================= Set color vars here =================*/
 	--default-color: rgb(252, 252, 252);
@@ -28,6 +30,7 @@
 	--primary-color: #18CC05;
 	--highlight-color: #085011;
 	--link-color: hsl(209, 62%, 45%);
+	--visited-color: #551A8B;
 	--border-color: rgb(45, 45, 45);
 	--default-cursor: url('../../../images/cursors/Arch-black.svgz'), auto;
 	--pointer: url('../../../images/cursors/3D_hand_cursor.svgz'), pointer;
@@ -66,6 +69,8 @@
 	--sidebar-width: calc(97% - var(--article-width));
 	--article-position: 2;
 	--sidebar-position: 1;
+	/*This is the max z-index value. Others can use calc(var(--z-max) - n)*/
+	--z-max: 100;
 }
 :root {
 	background-color: black;
